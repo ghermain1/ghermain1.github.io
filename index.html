@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Simple Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white text-center py-4">
         <h1>Welcome to My Website</h1>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>This is a simple responsive website.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at email@example.com.</p>
-    </section>
-    <footer>
+    <div class="container">
+        <section id="about" class="my-4">
+            <h2>About Me</h2>
+            <p>This is a simple responsive website built with Bootstrap.</p>
+        </section>
+        <section id="contact" class="my-4">
+            <h2>Contact</h2>
+            <p>You can reach me at email@example.com.</p>
+        </section>
+    </div>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 My Simple Website</p>
     </footer>
 </body>
