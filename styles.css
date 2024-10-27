@@ -9,7 +9,6 @@ body, html {
     background-size: cover; /* Cover the entire header */
     background-position: center; /* Center the image */
     position: relative; /* Relative positioning for overlay */
-    overflow: hidden; /* Prevent scrolling beyond the header */
 }
 
 .overlay {
@@ -42,9 +41,10 @@ h1 {
     z-index: 1000; /* Ensure it stays on top */
 }
 
-/* Content Container */
-.content {
-    margin-top: 100vh; /* Space for the header */
+/* Main Content */
+.main-content {
+    padding-top: 100vh; /* Space for the header */
+    padding-bottom: 50px; /* Space for the footer */
 }
 
 /* Sticky Footer */
@@ -53,5 +53,8 @@ h1 {
     color: #fff;
     padding: 10px 0; /* Reduced padding */
     width: 100%;
-    transition: background 0.5s ease, padding 0.5s ease;
+    position: fixed; /* Fixed positioning to stay at the bottom */
+    bottom: 0; /* Stick to the bottom */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure it stays on top */
 }
