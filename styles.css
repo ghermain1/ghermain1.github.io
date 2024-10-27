@@ -54,3 +54,35 @@ h1 {
     width: 100%;
     text-align: center; /* Center text */
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; /* High value for round buttons */
+    transition: background-color 0.3s;
+}
+
+.email-button {
+    background-color: #007BFF; /* Blue */
+}
+
+.patreon-button {
+    background-color: #F96854; /* Patreon Red */
+}
+
+.button:hover {
+    opacity: 0.9;
+}
