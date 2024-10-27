@@ -28,7 +28,7 @@ h1 {
 
 .lead {
    color:white;
-    margin-top:2rem;
+    margin-top:3rem;
 }
 
 /* Fixed Header */
@@ -44,7 +44,7 @@ h1 {
 
 /* Main Content */
 .main-content {
-    padding-top: 100px; /* Space for header */
+   /* Space for header */
 }
 
 /* Normal Footer */
@@ -84,17 +84,17 @@ h1 {
 .button-container {
     text-align: center; /* Center text inside the container */
     max-width: 80%;
-     border: 1px solid red;
+     /*border: 1px solid red;*/
 }
 .cont {
-    margin-top:1rem;
+    margin-top:2rem;
 }
 @media (max-width: 600px) {
     h1 {
-        font-size: 0.9rem; /* Smaller font for mobile */
+        font-size: 0.8rem; /* Smaller font for mobile */
     }
 
     button {
-        font-size: 0.9rem; /* Smaller button font */
+        font-size: 0.8rem; /* Smaller button font */
     }
 }
