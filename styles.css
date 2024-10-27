@@ -5,9 +5,11 @@ body, html {
 
 .bg-image {
     background-image: url('https://raw.githubusercontent.com/ghermain1/ghermain1.github.io/refs/heads/main/photo-1613666740417-497352eacd2f%20(1).avif'); /* Update this with your image URL */
-    height: 100vh; /* Full height */
+    height: 100vh; /* Full height for the background image */
     background-size: cover; /* Cover the entire header */
     background-position: center; /* Center the image */
+    position: relative; /* Relative positioning for overlay */
+    overflow: hidden; /* Prevent scrolling beyond the header */
 }
 
 .overlay {
@@ -30,15 +32,19 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Sticky Header */
+/* Fixed Header */
 #header {
     background: rgba(0, 0, 0, 0.9); /* Dark background */
     padding: 20px 0; /* Initial padding */
-    transition: background 0.5s ease, padding 0.5s ease;
-    position: sticky; /* Make header sticky */
+    position: fixed; /* Fixed positioning to stay at the top */
     top: 0; /* Stick to the top */
     width: 100%;
     z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Content Container */
+.content {
+    margin-top: 100vh; /* Space for the header */
 }
 
 /* Sticky Footer */
@@ -48,19 +54,4 @@ h1 {
     padding: 10px 0; /* Reduced padding */
     width: 100%;
     transition: background 0.5s ease, padding 0.5s ease;
-    position: relative; /* Ensure it is positioned correctly */
-    margin-top: auto; /* Push footer to the bottom */
-}
-
-/* Styles for fixed footer */
-.fixed {
-    position: fixed; /* Make footer fixed */
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-/* Eliminate body margin */
-body {
-    margin: 0;
 }
