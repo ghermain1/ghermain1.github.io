@@ -62,10 +62,6 @@ body {
     background-color: #f4f4f4;
 }
 
-.button-container {
-    display: flex;
-    gap: 20px;
-}
 
 .button {
     padding: 15px 25px;
