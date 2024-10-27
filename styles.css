@@ -79,11 +79,9 @@ h1 {
     color:white;
 }
 .button-container {
-    justify-content: center;
     align-items: center;
 
     text-align: center; /* Center text inside the container */
-    padding: 20%;
     max-width: 80%;
      border: 1px solid red;
 }
