@@ -37,3 +37,14 @@ footer {
     background: #333;
     color: #fff;
 }
+
+/* Sticky Header */
+#header {
+    transition: background 0.5s ease, padding 0.5s ease;
+    padding: 20px 0; /* Initial padding */
+}
+
+.sticky {
+    background: rgba(0, 0, 0, 0.9); /* Background color when sticky */
+    padding: 10px 0; /* Reduced padding */
+}
