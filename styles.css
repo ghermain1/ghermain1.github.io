@@ -4,17 +4,14 @@ body, html {
 }
 
 .bg-image {
-    background-image: url('https://images.unsplash.com/photo-1613666740417-497352eacd2f?q=80&w=2488&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image URL */
+    background-image: url('https://raw.githubusercontent.com/yourusername/mywebsite/main/background.jpg'); /* Update this with your image URL */
     height: 100vh; /* Full height */
     background-size: cover; /* Cover the entire header */
     background-position: center; /* Center the image */
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .overlay {
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for the image */
     width: 100%;
     height: 100%;
     display: flex;
@@ -42,6 +39,7 @@ h1 {
     top: 0; /* Stick to the top */
     width: 100%;
     z-index: 1000; /* Ensure it stays on top */
+    margin-top: -20px; /* Negative margin to pull it up */
 }
 
 /* Sticky Footer */
@@ -53,6 +51,7 @@ h1 {
     width: 100%;
     transition: background 0.5s ease, padding 0.5s ease;
     margin-top: auto; /* Ensure footer is pushed to the bottom */
+    margin-bottom: -10px; /* Negative margin to pull it down */
 }
 
 /* Styles for fixed footer */
