@@ -21,7 +21,7 @@ body, html {
 }
 
 h1 {
-    font-size: 2rem; /* Adjust size for large text */
+    font-size: 1.5rem; /* Adjust size for large text */
     margin: 0;
 }
 
@@ -81,7 +81,9 @@ h1 {
 .button-container {
     justify-content: center;
     align-items: center;
-       text-align: center; /* Center text inside the container */
+
+    text-align: center; /* Center text inside the container */
     padding: 20%;
-    max-width: 80%
+    max-width: 80%;
+     border: 1px solid red;
 }
