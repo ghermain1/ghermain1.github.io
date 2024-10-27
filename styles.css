@@ -32,7 +32,7 @@ h1 {
 
 /* Fixed Header */
 #header {
-    background: rgba(0, 0, 0, 0.9); /* Dark background */
+    background: rgba(0, 0, 0, 0); /* Dark background */
     padding: 20px 0; /* Initial padding */
     position: fixed; /* Keep header fixed */
     top: 0; /* Stick to the top */
@@ -47,8 +47,8 @@ h1 {
 
 /* Normal Footer */
 #footer {
-    background: rgba(0, 0, 0, 0.9); /* Dark background */
-    color: #fff;
+    background: rgba(0, 0, 0, 0); /* Dark background */
+    color:black;
     padding: 10px 0; /* Padding */
     width: 100%;
     text-align: center; /* Center text */
