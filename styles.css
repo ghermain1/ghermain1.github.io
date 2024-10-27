@@ -8,7 +8,6 @@ body, html {
     height: 100vh; /* Full height for the background image */
     background-size: cover; /* Cover the entire header */
     background-position: center; /* Center the image */
-    position: relative; /* Relative positioning for overlay */
 }
 
 .overlay {
@@ -35,7 +34,7 @@ h1 {
 #header {
     background: rgba(0, 0, 0, 0.9); /* Dark background */
     padding: 20px 0; /* Initial padding */
-    position: fixed; /* Fixed positioning to stay at the top */
+    position: fixed; /* Keep header fixed */
     top: 0; /* Stick to the top */
     width: 100%;
     z-index: 1000; /* Ensure it stays on top */
@@ -43,18 +42,14 @@ h1 {
 
 /* Main Content */
 .main-content {
-    padding-top: 100vh; /* Space for the header */
-    padding-bottom: 50px; /* Space for the footer */
+    padding-top: 100px; /* Space for header */
 }
 
-/* Sticky Footer */
+/* Normal Footer */
 #footer {
     background: rgba(0, 0, 0, 0.9); /* Dark background */
     color: #fff;
-    padding: 10px 0; /* Reduced padding */
+    padding: 10px 0; /* Padding */
     width: 100%;
-    position: fixed; /* Fixed positioning to stay at the bottom */
-    bottom: 0; /* Stick to the bottom */
-    left: 0; /* Align to the left */
-    z-index: 1000; /* Ensure it stays on top */
+    text-align: center; /* Center text */
 }
