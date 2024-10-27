@@ -84,17 +84,17 @@ h1 {
 .button-container {
     text-align: center; /* Center text inside the container */
     max-width: 80%;
-     /*border: 1px solid red;*/
+     /*order: 1px solid red;*/
 }
 .cont {
     margin-top:2rem;
 }
 @media (max-width: 600px) {
     h1 {
-        font-size: 0.8rem; /* Smaller font for mobile */
+        font-size: 0.7rem; /* Smaller font for mobile */
     }
 
     button {
-        font-size: 0.8rem; /* Smaller button font */
+        font-size: 0.7rem; /* Smaller button font */
     }
 }
