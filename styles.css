@@ -21,14 +21,13 @@ body, html {
 }
 
 h1 {
-    font-size: 1.5rem; /* Adjust size for large text */
-    margin: 0;
+   font-size: 1.5rem;
+    margin-bottom: 20px;
+    color:white;
 }
 
 .lead {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color:white;
+   
 }
 
 /* Fixed Header */
@@ -57,7 +56,7 @@ h1 {
 }
 
 .button {
-    padding: 15px 25px;
+    padding: 1rem 1rem;
     color: black;
     text-decoration: none;
     border-radius: 50px; /* High value for round buttons */
@@ -67,16 +66,19 @@ h1 {
 .email-button {
     background-color: white;
     color:black;
+     text-decoration: none;
 }
 
 .patreon-button {
     background-color: white; 
     color:black;
+     text-decoration: none;
 }
 
 .button:hover {
     background-color:black;
     color:white;
+    text-decoration: none;
 }
 .button-container {
     align-items: center;
@@ -87,4 +89,13 @@ h1 {
 }
 .cont {
     margin-top:1rem;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller font for mobile */
+    }
+
+    button {
+        font-size: 0.9rem; /* Smaller button font */
+    }
 }
