@@ -4,8 +4,8 @@ body, html {
 }
 
 .bg-image {
-    background-image: url('https://raw.githubusercontent.com/ghermain1/ghermain1.github.io/refs/heads/main/photo-1613666740417-497352eacd2f%20(1).avif'); /* Update this with your image URL */
-    height: 100vh; /* Full height for the background image */
+    background-image: url('https://raw.githubusercontent.com/ghermain1/ghermain1.github.io/refs/heads/main/IMG_88552.jpg'); /* Update this with your image URL */
+    height: 100%; /* Full height for the background image */
     background-size: cover; /* Cover the entire header */
     background-position: center; /* Center the image */
 }
@@ -28,6 +28,7 @@ h1 {
 .lead {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    color:white;
 }
 
 /* Fixed Header */
@@ -64,13 +65,23 @@ h1 {
 }
 
 .email-button {
-    background-color: #c2d6d6; /* Blue */
+    background-color: white;
+    color:black;
 }
 
 .patreon-button {
-    background-color: #c2d6d6; /* Patreon Red */
+    background-color: white; 
+    color:black;
 }
 
 .button:hover {
-    opacity: 0.9;
+    background-color:black;
+    color:white;
+}
+.button-container {
+    justify-content: center;
+    align-items: center;
+       text-align: center; /* Center text inside the container */
+    padding: 20%;
+    max-width: 80%
 }
