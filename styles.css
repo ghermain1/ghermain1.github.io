@@ -64,3 +64,67 @@ footer {
     background: rgba(0, 0, 0, 0.9); /* Background color when sticky */
     padding: 10px 0; /* Reduced padding */
 }
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg-image {
+    background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+    height: 100vh; /* Full height */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 4rem; /* Adjust size for large text */
+    margin: 0;
+}
+
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Sticky Header */
+#header {
+    background: rgba(0, 0, 0, 0.9); /* Background color when sticky */
+    padding: 20px 0; /* Initial padding */
+    transition: background 0.5s ease, padding 0.5s ease;
+    position: sticky; /* Make header sticky */
+    top: 0; /* Stick to the top */
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Sticky Footer */
+#footer {
+    background: rgba(0, 0, 0, 0.9); /* Dark background */
+    color: #fff;
+    padding: 10px 0; /* Reduced padding */
+    position: relative; /* Set to relative */
+    width: 100%;
+    transition: background 0.5s ease, padding 0.5s ease;
+    margin-top: auto; /* Ensure footer is pushed to the bottom */
+}
+
+/* Styles for fixed footer */
+.fixed {
+    position: fixed; /* Make footer fixed */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
