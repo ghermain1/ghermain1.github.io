@@ -57,7 +57,7 @@ h1 {
 
 .button {
     padding: 15px 25px;
-    color: white;
+    color: black;
     text-decoration: none;
     border-radius: 50px; /* High value for round buttons */
     transition: background-color 0.3s;
