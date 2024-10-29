@@ -8,32 +8,33 @@ body, html {
     height: 100%;
     background-size: cover;
     background-position: center;
-  
+    display: flex; /* Use flexbox for overlay positioning */
 }
 
 .overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7); /* Darken overlay for better text contrast */
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    padding: 20px; /* Added padding for better spacing */
+    box-sizing: border-box; /* Include padding in width/height calculations */
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Increased size for better visibility */
     margin-bottom: 20px;
-    margin-top: 20px;
-    color: black;
+    color: white;
 }
 
 .lead {
     padding: 1rem;
     color: white;
-    margin-top: -6rem;
     text-align: center;
-
+    max-width: 800px; /* Set max width to prevent text from stretching too wide */
+    line-height: 1.5; /* Improve readability with line height */
 }
 
 .button {
@@ -42,7 +43,9 @@ h1 {
     text-decoration: none;
     border-radius: 50px;
     transition: background-color 0.3s;
-    margin: 2rem; /* Add margin for spacing */
+    margin: 1rem; /* Adjust margin for spacing */
+    flex: 1; /* Make buttons flexibly fill available space */
+    max-width: 200px; /* Limit button width for better layout */
 }
 
 .email-button, .patreon-button {
@@ -53,6 +56,38 @@ h1 {
     background-color: black;
     color: white;
 }
-.cont {
 
+/* Media Queries for Enhanced Responsiveness */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2rem; /* Responsive size for tablets */
+    }
+    .lead {
+        font-size: 1rem; /* Adjust font size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller font size on mobile */
+    }
+    .lead {
+        font-size: 0.9rem; /* Slightly smaller font for lead text */
+        margin-top: 0; /* Reset margin to prevent overlap */
+    }
+    .button {
+        width: 100%; /* Full-width buttons on smaller screens */
+        margin: 0.5rem 0; /* Vertical spacing between buttons */
+        max-width: none; /* Remove max-width on mobile for full responsiveness */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.25rem; /* Further reduce font size for small screens */
+    }
+    .lead {
+        font-size: 0.8rem; /* Adjust font size for small screens */
+        padding: 0.5rem; /* Reduce padding for smaller devices */
+    }
 }
