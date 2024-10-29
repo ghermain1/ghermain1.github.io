@@ -43,7 +43,7 @@ h1 {
     text-decoration: none;
     border-radius: 50px;
     transition: background-color 0.3s;
-    margin: 3rem; /* Adjust margin for spacing */
+    margin: 2rem; /* Adjust margin for spacing */
     flex: 1; /* Make buttons flexibly fill available space */
     max-width: 200px; /* Limit button width for better layout */
 }
@@ -81,7 +81,7 @@ h1 {
     }
     .button {
         width: 100%; /* Full-width buttons on smaller screens */
-        margin: 0.5rem 0; /* Vertical spacing between buttons */
+        margin: 1rem; /* Vertical spacing between buttons */
         max-width: none; /* Remove max-width on mobile for full responsiveness */
     }
 }
