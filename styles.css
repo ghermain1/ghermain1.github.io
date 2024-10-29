@@ -53,6 +53,6 @@ h1 {
     color: white;
 }
 .cont {
-    paddingtop:5%;
+    margin:5%;
     border: 1px solid red;
 }
