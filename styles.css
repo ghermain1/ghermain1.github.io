@@ -58,9 +58,7 @@ h1 {
 }
 .cont {
     margin-top: 40px; /* Increased margin for spacing above the buttons */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center buttons */
+ 
 }
 
 /* Media Queries for Enhanced Responsiveness */
