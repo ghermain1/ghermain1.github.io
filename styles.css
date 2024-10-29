@@ -23,7 +23,7 @@ body, html {
 h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: white;
+    color: black;
 }
 
 .lead {
@@ -48,4 +48,7 @@ h1 {
 .button:hover {
     background-color: black;
     color: white;
+}
+.cont {
+    paddingtop:5%;
 }
