@@ -29,6 +29,7 @@ h1 {
 }
 
 .lead {
+    padding: 10%;
     color: white;
     margin-top: 1rem;
     text-align: center;
@@ -41,7 +42,7 @@ h1 {
     text-decoration: none;
     border-radius: 50px;
     transition: background-color 0.3s;
-    margin: 0.5rem; /* Add margin for spacing */
+    margin: 2rem; /* Add margin for spacing */
 }
 
 .email-button, .patreon-button {
@@ -53,6 +54,5 @@ h1 {
     color: white;
 }
 .cont {
-    margin:5%;
     border: 1px solid red;
 }
